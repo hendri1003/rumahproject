@@ -134,6 +134,7 @@
 
       </div>
       <div id="right-menu" class="col-lg-9">
+        tes
         <!-- {{!! Form::image('../img/') !!}} -->
       </div>
     </div>
