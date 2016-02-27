@@ -1,0 +1,233 @@
+.navbar {
+	min-height: 80px;
+}
+
+.navbar-inverse {
+	background-color: #0099cc;
+}
+
+.wrap {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	max-width: 1200px;
+	height: 100%;
+	width: 100%;
+}
+
+#menu-top {
+	line-height: 4;
+}
+
+#menu-top > ul > li {
+	float: left;
+	list-style: none;
+	padding-right: 10px;
+}
+
+#menu-top > ul > li > a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFF;
+	padding: 16px 20px;
+	background-color:rgba(0, 0, 0, 0.6);
+}
+
+#header-right {
+	float: right;
+}
+
+#form-search {
+	float: none;
+	position: absolute;
+	/*width: 100%;*/
+	margin-left:-300px;
+	top: 30px;
+}
+
+#form-search input#search {
+	width: 150px;
+	height: 30px;
+	/*background: #2b303b;*/
+	border: none;
+	/*margin-top: 50%;
+	margin-left: -100px;*/
+	text-indent: 15px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+#form-search .icon {
+	position: absolute;
+	z-index: 1;
+	margin-top: -25px;
+	right: 10px;
+}
+
+#carousel-header {
+	padding: 80px 0;
+	padding-bottom: 20px;
+}
+
+.slide1, .slide2, .slide3 {
+	min-height: 560px; /* Must have a height or min-height set due to use of background images */
+	background-size: cover;
+	background-position: center center;
+}
+.slide1 {
+	background-image: url(../img/nature-wallpaper-hd1.jpg);
+}
+.slide2 {
+	background-image: url(http://placekitten.com/1100/300);
+}
+.slide3 {
+	background-image: url(http://placekitten.com/1200/300);
+}
+/* Carousel Fade Effect */
+.carousel.carousel-fade .item {
+	-webkit-transition: opacity 1s linear;
+	-moz-transition: opacity 1s linear;
+	-ms-transition: opacity 1s linear;
+	-o-transition: opacity 1s linear;
+	transition: opacity 1s linear;
+	opacity: .5;
+}
+.carousel.carousel-fade .active.item {
+	opacity: 1;
+}
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+	left: 0;
+	z-index: 2;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.left-menu-header {
+	padding: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #ff3300;
+	color: #FFF;
+}
+
+.news-title {
+	padding-top: 10px;
+	font-weight: bold;
+}
+
+.news-description {
+	font-size: 10pt;
+}
+
+#event-items {
+	margin: 1em 0;
+}
+.event-item {
+	overflow: hidden;
+	padding: 0 0 1em;
+	border-bottom: 1px solid #ddd;
+	margin: 1em 0 1em;
+}
+.event-left {
+	float: left;
+	overflow: hidden;
+	width: 50px;
+	height: 50px;
+}
+.event-right {
+	margin-left: 65px;
+	overflow: hidden;
+}
+.event-title {
+	font-size: 12pt;
+	font-weight: bold;
+}
+.event-description {
+	font-size: 10pt;
+}
+.event-date {
+	font-size: 10pt;
+	color: #FF3300;
+}
+
+.testimonial {
+	overflow: hidden;
+	padding: 0 0 1em;
+	border-bottom: 1px solid #ddd;
+	margin: 1em 0 1em;
+	*zoom: 1;
+}
+.testimonial-left {
+	float: left;
+	margin-right: 33px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.testimonial-left img {
+	display: block;
+}
+.testimonial-right {
+	overflow: hidden;
+}
+.testimonial .text {
+	padding: 10px;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	background: #FFF;
+	font-size: 10pt;
+}
+.testimonial .text p:last-child {
+	margin: 0;
+}
+.testimonial .attribution {
+	margin: 0.5em 0 0;
+	font-size: 14px;
+	color: #666;
+}
+#testimonials-comment,
+.testimonial {
+	position: relative;
+}
+#testimonials-comment:before,
+.testimonial:before,
+.testimonial .text:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 65px;
+}
+#testimonials-comment:before {
+	width: 3px;
+	top: -14px;
+	bottom: -20px;
+	background: rgba(0,0,0,0.1);
+}
+.testimonial:before {
+    width: 15px;
+    height: 15px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    margin: 16px 0 0 -6px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
+    background: #ccc;
+}
+.testimonial:hover:before {
+    background: orange;
+}
+.testimonial .text:before {
+    top: 18px;
+    left: 78px;
+    width: 9px;
+    height: 9px;
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    border-color: #e5e5e5;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
